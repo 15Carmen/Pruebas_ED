@@ -17,7 +17,7 @@ class PersonaTest {
     void tearDown() {
     }
 
-    
+
 
     @Test
     void getNombre() {

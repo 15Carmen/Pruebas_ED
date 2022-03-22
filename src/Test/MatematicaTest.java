@@ -43,6 +43,32 @@ class MatematicaTest {
 
         Assert.assertTrue(
                 "La suma no es correcta",
-                resultado !=resultadoEsperado);
+                resultado ==resultadoEsperado);
+    }
+
+    @Test
+    void esPar() {
+
+        int num= 4;
+        boolean resultadoEsperado = true;
+        boolean resultado= Matematica.esPar(num);
+
+        Assert.assertTrue(
+                "El numero no es par",
+                Matematica.esPar(num));
+    }
+
+    @Test
+    void esPar2() {
+
+        int num=6;
+        boolean resultadoEsperado = true;
+        boolean resultado= Matematica.esPar2(num);
+
+        Assert.assertTrue(
+                "El numero no es par",
+                Matematica.esPar2(num));
+
+
     }
 }
